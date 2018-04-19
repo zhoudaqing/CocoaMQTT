@@ -216,7 +216,7 @@ open class CocoaMQTT: NSObject, CocoaMQTTClient, CocoaMQTTFrameBufferProtocol {
 
     // global message id
     var gmid: UInt16 = 1
-    var socket = GCDAsyncSocket()
+    open var socket = GCDAsyncSocket()
     var reader: CocoaMQTTReader?
     
     // Clousures
